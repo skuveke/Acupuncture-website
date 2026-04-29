@@ -6,15 +6,15 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --black:    #0a0a0a;
+  --black:    #0d1f13;   /* deep forest green instead of pure black */
   --white:    #ffffff;
-  --grey-50:  #f7f7f7;
-  --grey-100: #ebebeb;
-  --grey-400: #9a9a9a;
-  --grey-600: #5a5a5a;
-  --grey-800: #222222;
-  --accent:   #c8a96e;   /* warm gold — athletic, premium */
-  --accent-dk:#a8894e;
+  --grey-50:  #f0f7f2;   /* faint green tint on light backgrounds */
+  --grey-100: #ddeee3;
+  --grey-400: #8fad98;
+  --grey-600: #4f7a5a;
+  --grey-800: #1e3d27;
+  --accent:   #52b788;   /* forest green */
+  --accent-dk:#40916c;   /* darker forest green */
   --font:     'Inter', system-ui, -apple-system, sans-serif;
   --radius:   6px;
   --shadow:   0 4px 24px rgba(0,0,0,0.08);
@@ -71,7 +71,7 @@ a { text-decoration: none; color: inherit; }
 .btn--primary:hover {
   background: var(--accent-dk);
   border-color: var(--accent-dk);
-  box-shadow: 0 6px 20px rgba(200,169,110,0.35);
+  box-shadow: 0 6px 20px rgba(82,183,136,0.35);
 }
 
 .btn--outline {
@@ -204,15 +204,15 @@ a { text-decoration: none; color: inherit; }
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(200,169,110,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(200,169,110,0.05) 1px, transparent 1px);
+    linear-gradient(rgba(82,183,136,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(82,183,136,0.06) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 70% 50%, rgba(200,169,110,0.12) 0%, transparent 65%);
+  background: radial-gradient(ellipse at 70% 50%, rgba(82,183,136,0.15) 0%, transparent 65%);
 }
 
 .hero__content {
