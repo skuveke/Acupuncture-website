@@ -569,17 +569,11 @@ a { text-decoration: none; color: inherit; }
   align-self: start;
   top: 0;
 }
-.about__image-placeholder {
+.about__photo {
   width: 100%;
   aspect-ratio: 3/4;
-  background: var(--grey-100);
+  object-fit: cover;
   border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--grey-400);
-  font-size: 14px;
-  overflow: hidden;
 }
 .about__badge {
   position: absolute;
