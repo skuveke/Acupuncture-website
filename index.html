@@ -332,6 +332,9 @@
           <textarea id="message" name="message" rows="4" placeholder="Tell us about your injury, condition, or goals..."></textarea>
         </div>
         <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        <div class="form-success" id="formSuccess">
+          Thank you for reaching out. We have received your message and will get right back to you.
+        </div>
       </form>
     </div>
   </section>
@@ -384,6 +387,23 @@
         nav.classList.remove('nav--open');
         hamburger.classList.remove('hamburger--open');
       });
+    });
+
+    // Formspree AJAX submission
+    const contactForm = document.querySelector('.contact-form');
+    const formSuccess = document.getElementById('formSuccess');
+    contactForm.addEventListener('submit', async e => {
+      e.preventDefault();
+      const data = new FormData(contactForm);
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        contactForm.reset();
+        formSuccess.classList.add('form-success--visible');
+      }
     });
 
     // Smooth scroll for anchor links

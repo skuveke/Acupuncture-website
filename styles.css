@@ -800,6 +800,18 @@ a { text-decoration: none; color: inherit; }
   color: var(--grey-600);
 }
 
+.form-success {
+  display: none;
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--accent);
+  background: rgba(82,183,136,0.1);
+  color: var(--white);
+  font-size: 15px;
+  line-height: 1.6;
+}
+.form-success--visible { display: block; }
+
 /* =========================================
    RESPONSIVE
    ========================================= */
