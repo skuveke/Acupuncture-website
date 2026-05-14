@@ -484,6 +484,16 @@ a { text-decoration: none; color: inherit; }
   gap: 20px;
   transition: border-color var(--transition), box-shadow var(--transition);
 }
+.coming-soon {
+  margin-top: 56px;
+  padding: 56px 32px;
+  border: 2px dashed var(--grey-100);
+  border-radius: 12px;
+  text-align: center;
+  color: var(--grey-400);
+  font-size: 16px;
+}
+
 .testimonial-card:hover {
   border-color: var(--accent);
   box-shadow: var(--shadow);
