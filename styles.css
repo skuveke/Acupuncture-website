@@ -695,6 +695,12 @@ a { text-decoration: none; color: inherit; }
   font-size: 18px;
   margin-top: 1px;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+.contact__detail-icon svg {
+  width: 18px;
+  height: 18px;
 }
 .contact__link {
   color: var(--white);
