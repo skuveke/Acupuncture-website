@@ -701,6 +701,8 @@ a { text-decoration: none; color: inherit; }
 .contact__detail-icon svg {
   width: 18px;
   height: 18px;
+  fill: var(--accent);
+  stroke: none;
 }
 .contact__link {
   color: var(--white);
